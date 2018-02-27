@@ -83,9 +83,27 @@ header strong {
   padding: 2rem 0 2rem 1.5rem;
 }
 
+.academy-content {
+  margin-left: 1rem;
+}
+
+.academy-content p {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
 .academy-info-left {
   width: 60%;
   margin-right: 1.5rem;
+}
+
+.image-content {
+  margin-top: 2rem;
+}
+
+.image-content p {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .academy-info-right {
@@ -115,31 +133,44 @@ header strong {
 }
 
 .career-content {
-  padding: 2rem 4.5rem; /*this sets width for career-content div */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*this centers the div on the webpage */
+  padding: 2rem 4.5rem;
 }
 
 .career-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .career-course {
-  max-width: 30%;
+  width: 30%;
   margin-top: 2rem;
   margin-left: 2rem;
 }
 
-.career-info .image-container {
-  width: 40%;
-  height: auto;
+.course-description {
+  margin: 1rem;
 }
 
-
+.course-description h4 {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
 
 /* THESIS SECTION */
 
 .thesis-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 2rem 0 2rem 1.5rem;
+}
+
+.thesis-section h1 {
+  margin-bottom: 2rem;
 }
 
 .thesis-container {
@@ -148,6 +179,15 @@ header strong {
 
 .video-content {
   width: 60%;
+  margin-right: 1.5rem;
+}
+
+.video-container {
+  margin-bottom: 1.5rem;
+}
+
+.video-content-text p {
+  margin-top: .5rem;
 }
 
 .thesis-content {
@@ -157,6 +197,8 @@ header strong {
 .thesis-info {
   display: flex;
   align-items: center;
+  padding: 1rem 0 1rem 1rem;
+  background-color: blue;  /*this is to show padding in div */
 }
 
 .thesis-info .image-container {
