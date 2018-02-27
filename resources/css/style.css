@@ -11,6 +11,16 @@ nav li {
   margin-left: 1rem;
 }
 
+nav li a,
+a {
+  text-decoration: none;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
 .image-container img {
   display: block;
   width: 100%;
@@ -68,33 +78,101 @@ header strong {
 
 /*ACADEMY INFORMATION */
 
-.academy-information {
+.academy-container {
   display: flex;
+  padding: 2rem 0 2rem 1.5rem;
 }
 
 .academy-info-left {
   width: 60%;
+  margin-right: 1.5rem;
 }
 
 .academy-info-right {
   width: 40%;
+  margin-left: 1rem;
 }
 
 .academy-info-right .image-container {
   width: 35%;
 }
 
-.info {
-  display: flex;
+.academy-info-right .academy-content {
+  width: 65%;
 }
 
+.info {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+/* CAREER SECTION */
+
+.career-section-mobile {
+  display: none;
+}
+
+.career-content {
+  padding: 2rem 4.5rem; /*this sets width for career-content div */
+}
+
+.career-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.career-course {
+  max-width: 30%;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.career-info .image-container {
+  width: 40%;
+  height: auto;
+}
 
 
 
 /* THESIS SECTION */
 
+.thesis-section {
+  padding: 2rem 0 2rem 1.5rem;
+}
 
+.thesis-container {
+  display: flex;
+}
+
+.video-content {
+  width: 60%;
+}
+
+.thesis-content {
+  width: 40%;
+}
+
+.thesis-info {
+  display: flex;
+  align-items: center;
+}
+
+.thesis-info .image-container {
+  width: 35%;
+}
+
+.thesis-info .thesis-content-text {
+  width: 65%;
+}
 
 
 
 /* FOOTER SECTION */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
