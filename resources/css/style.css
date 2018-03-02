@@ -58,7 +58,11 @@ header strong {
   padding: 1rem 1.5rem;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
+  footer .header-content {
+    display: block;
+  }
+
   .header-content .logo-content {
     display: none;
   }
@@ -68,10 +72,10 @@ header strong {
   .header-mobile {
     display: block;
   }
-  .header-content .header-mobile {
+  /*.header-content .header-mobile {
     display: flex;
     justify-content: space-around;
-  }
+  } */ /* check then delete */
 
 }
 
@@ -98,17 +102,21 @@ header strong {
     padding: 0;
     padding-bottom: 2rem;
   }
+
   .banner-container {
     display: block;
   }
+
   .main-banner .banner-container .image-container {
     width: 100%;
     margin: 0;
   }
+
   .banner-container .banner-content {
     width: 100%;
     text-align: center;
   }
+
   .banner-content h1 {
     margin: 1.5rem 0;
   }
@@ -155,7 +163,7 @@ header strong {
   padding: 2rem 0 2rem 1.5rem;
 }
 
-.academy-img-mobile {
+.info .academy-img-mobile {  /*check then delete */
   display: none;
 }
 
@@ -263,15 +271,38 @@ header strong {
   margin-left: 2rem;
 }
 
+
 @media only screen and (max-width: 1120px) {
   .career-course {
     width: 45%;
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 800px) {
+  .career-desktop {
+    display: none;
+  }
+
+  .career-section-mobile {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid grey; /* check for color then delele */
+    border-bottom: 1px solid grey; /*this too */
+  }
+
+  .career-section-mobile h1 {
+    margin-bottom: 1rem;
+  }
+
+  .info-mobile {
+    background-color: grey; /*for example color */
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
 
 }
+
 
 .course-description {
   margin: 1rem;
@@ -327,6 +358,8 @@ header strong {
   }
 
   .thesis-section {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
     padding: 0;
   }
 
@@ -357,7 +390,7 @@ header strong {
 
 @media only screen and (max-width: 768px) {
   footer {
-    font-size: .8rem;
+    margin-bottom: 1rem;
   }
 }
 
