@@ -170,6 +170,7 @@ header strong {
 }
 
 @media only screen and (max-width: 768px) {
+
   .desktop {
     display: none;
   }
@@ -185,13 +186,13 @@ header strong {
     display: block;
     padding-left: 0;
   }
-  .academy-container .academy-info-right .image-container {  /*check this*/
-    width: auto;
+  .academy-container .academy-info-right .image-container {
+    display: flex;
+    width: 100%;
+    height: auto;
     padding: 1rem;
   }
-  .info .academy-content {
-    margin: 0;
-  }
+
 }
 
 .image-content {
@@ -254,10 +255,10 @@ header strong {
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .career-course {
+@media only screen and (max-width: 760px) {
+  /*.career-course {
     width: 80%;
-  }
+  } */
 }
 
 .course-description {
