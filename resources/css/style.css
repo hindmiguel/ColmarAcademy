@@ -1,3 +1,5 @@
+/* Universal styles */
+
 html {
   font-family: "Georgia", sans-serif;
   font-size: 16px;
@@ -8,7 +10,7 @@ header nav ul {
 }
 
 nav li {
-  margin-left: 1rem;
+  padding-left: 1rem;
 }
 
 nav li a,
@@ -45,7 +47,7 @@ header strong {
   font-weight: bold;
 }
 
-.mobile {
+.header-mobile {
   display: none;
 }
 
@@ -54,6 +56,23 @@ header strong {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .header-content .logo-content {
+    display: none;
+  }
+  .header-desktop {
+    display: none;
+  }
+  .header-mobile {
+    display: block;
+  }
+  .header-content .header-mobile {
+    display: flex;
+    justify-content: space-around;
+  }
+
 }
 
 .logo-content {
@@ -74,13 +93,20 @@ header strong {
   align-items: center;
 }
 
-@media only screen and (max-width: 677px) {
-  .banner-container {
-    flex-direction:  column;
-    margin: 0;
-  }
+@media only screen and (max-width: 700px) {
   .main-banner {
     padding: 0;
+  }
+  .banner-container {
+    display: block;
+  }
+  .main-banner .banner-container .image-container {
+    width: 100%;
+    margin: 0;
+  }
+  .banner-container .banner-content {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -256,6 +282,11 @@ header strong {
     width: 100%;
     margin: 0;
   }
+
+  .thesis-section {
+    padding: 0;
+  }
+
 }
 
 .thesis-content-text {
@@ -280,6 +311,13 @@ header strong {
 
 
 /* FOOTER SECTION */
+
+@media only screen and (max-width: 768px) {
+  footer {
+    font-size: .8rem;
+  }
+}
+
 
 footer {
   display: flex;
