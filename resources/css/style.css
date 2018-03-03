@@ -5,6 +5,13 @@ html {
   font-size: 16px;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
+}
+
 header nav ul {
   display: flex;
 }
@@ -38,6 +45,13 @@ video {
   display: block;
   width: 100%;
   height: auto;
+}
+
+/* MAIN CONTAINER */
+
+.main-container {
+  position: relative;
+  top: 82px;
 }
 
 
@@ -143,7 +157,7 @@ header strong {
   margin-bottom: 1rem;
 }
 
-.banner-content a {   /*check this after eating */
+.banner-content a {
   display: flex;
   justify-content: center;
 }
@@ -154,7 +168,7 @@ header strong {
 }
 
 .button {
-  background-color: white;
+  background-color: white;  /*add transition to background-color */ /*add pseudo class to button */
   padding: 1rem 5rem;
 }
 
@@ -165,7 +179,7 @@ header strong {
   padding: 2rem 0 2rem 1.5rem;
 }
 
-.info .academy-img-mobile {  /*check then delete */
+.info .academy-img-mobile {
   display: none;
 }
 
@@ -180,7 +194,7 @@ header strong {
 
 .academy-info-left {
   width: 60%;
-  margin-right: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 
@@ -243,7 +257,7 @@ header strong {
 .info {
   display: flex;
   align-items: center;
-  padding: 1rem
+  padding: 1rem;
   border: 1px solid grey;  /* add transition */
 }
 
@@ -374,8 +388,9 @@ header strong {
 .thesis-info {
   display: flex;
   align-items: center;
-  padding: 1rem 0 1rem 1rem;
-  background-color: blue;  /*this is to show padding in div */
+  padding: 1rem;
+  background-color: blue;  /* change color to design */
+  border: 1px solid grey; /*add transition to background-color */
 }
 
 .thesis-info .image-container {
@@ -401,4 +416,5 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
+  border-top: 1px solid grey;
 }
