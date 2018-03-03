@@ -14,13 +14,13 @@
 
 <!-- HEADER SECTION -->
 
-    <header>
+    <header class="header-desktop">
       <div class="header-content">
-        <div class="logo-content">
-          <img class="logo" src="./resources/images/ic-logo.svg">
+        <div class="logo-content">  <!-- remember to check for this class in CSS -->
+          <img src="./resources/images/ic-logo.svg">
           <span><strong>Colmar</strong> Academy</span>
         </div>
-        <nav class="header-desktop">
+        <nav> <!-- this goes here class="header-desktop" -->
           <ul>
             <li><a href="#">On Campus</a></li>
             <li><a href="#">Online</a></li>
@@ -28,7 +28,19 @@
             <li><a href="#">Sign In</a></li>
           </ul>
         </nav>
-        <nav class="header-mobile">
+        <!-- <nav class="header-mobile">
+          <ul>
+            <li><img src="./resources/images/ic-logo.svg"></li>
+            <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
+          </ul>
+        </nav> -->
+      </div>
+    </header>
+
+    <header class="header-mobile"> <!-- remove this section -->
+        <nav>
           <ul>
             <li><img src="./resources/images/ic-logo.svg"></li>
             <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
@@ -36,8 +48,9 @@
             <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
           </ul>
         </nav>
-      </div>
     </header>
+
+
 
 <!-- Main Banner Section -->
 

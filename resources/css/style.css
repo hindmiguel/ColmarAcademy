@@ -43,6 +43,7 @@ video {
 
 /* HEADER SECTION */
 
+
 header strong {
   font-weight: bold;
 }
@@ -51,32 +52,33 @@ header strong {
   display: none;
 }
 
+
+@media only screen and (max-width: 768px) {
+  /*.header-content .logo-content {
+    display: none;
+  } */ /*remove this from comment */
+
+  .header-desktop {
+    display: none;
+  }
+
+  .header-mobile {
+    display: block;
+    padding: 1.5rem 0;
+  }
+
+  .header-mobile nav ul {
+    justify-content: space-around;
+  } /*this goes back to the second idea */
+
+}
+
+
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-}
-
-@media only screen and (max-width: 768px) {
-  footer .header-content {
-    display: block;
-  }
-
-  .header-content .logo-content {
-    display: none;
-  }
-  .header-desktop {
-    display: none;
-  }
-  .header-mobile {
-    display: block;
-  }
-  /*.header-content .header-mobile {
-    display: flex;
-    justify-content: space-around;
-  } */ /* check then delete */
-
 }
 
 .logo-content {
@@ -241,8 +243,8 @@ header strong {
 .info {
   display: flex;
   align-items: center;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
+  padding: 1rem
+  border: 1px solid grey;  /* add transition */
 }
 
 
