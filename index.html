@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Colmar Academy</title>
     <link href="./Colmar_Academy.ico" rel="icon" type="image/x-icon">
+<!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700|Merriweather:400,700|Yeseva+One" rel="stylesheet">
+<!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
 
@@ -21,7 +23,7 @@
           <span><strong>Colmar</strong> Academy</span>
         </div>
         <nav>
-          <ul>
+          <ul role="presentation">
             <li><a href="#">On Campus</a></li>
             <li><a href="#">Online</a></li>
             <li><a href="#">Companies</a></li>
@@ -33,7 +35,7 @@
 
     <header class="header-mobile" role="presentation"> <!-- this is for mobile -->
         <nav>
-          <ul>
+          <ul class="presentation">
             <li><img src="./resources/images/ic-logo.svg"></li>
             <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
             <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
@@ -133,7 +135,7 @@
               <div class="course-description">
                 <h3>Software Engineering</h3>
                 <h4>Course</h4>
-                <h4>Web Development, Mobile Devvelopment, iOT, APIs</h4>
+                <h4 role="complementary">Web Development, Mobile Devvelopment, iOT, APIs</h4>
               </div>
             </div>
 
@@ -144,7 +146,7 @@
               <div class="course-description">
                 <h3>Computer Art</h3>
                 <h4>Course</h4>
-                <h4>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</h3>
+                <h4 role="complementary">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</h3>
               </div>
             </div>
 
@@ -155,7 +157,7 @@
               <div class="course-description">
                 <h3>Design</h3>
                 <h4>Course</h4>
-                <h4>User Experience Design, User Research, Visual Design</h4>
+                <h4 role="complementary">User Experience Design, User Research, Visual Design</h4>
               </div>
             </div>
 
@@ -166,7 +168,7 @@
               <div class="course-description">
                 <h3>Data</h3>
                 <h4>Course</h4>
-                <h4>Data Science, Big Data, SQL, Data Visualization</h4>
+                <h4 role="complementary">Data Science, Big Data, SQL, Data Visualization</h4>
               </div>
             </div>
 
@@ -177,7 +179,7 @@
               <div class="course-description">
                 <h3>Business</h3>
                 <h4>Course</h4>
-                <h4>Product Development, Business Development, Startup</h4>
+                <h4 role="complementary">Product Development, Business Development, Startup</h4>
               </div>
             </div>
 
@@ -188,7 +190,7 @@
               <div class="course-description">
                 <h3>Marketing</h3>
                 <h4>Course</h4>
-                <h4>Analytics, Content Marketing, Mobile Marketing</h4>
+                <h4 role="complementary">Analytics, Content Marketing, Mobile Marketing</h4>
               </div>
             </div>
 
@@ -202,22 +204,22 @@
         <h1>Start Learning</h1>
         <div class="career-mobile-container">
           <div class="info-mobile">
-            <span>Software Engineering</span>
+            <a href="#"><span>Software Engineering</span></a>
           </div>
           <div class="info-mobile">
-            <span>Computer Art</span>
+            <a href="#"><span>Computer Art</span></a>
           </div>
           <div class="info-mobile">
-            <span>Design</span>
+            <a href="#"><span>Design</span></a>
           </div>
           <div class="info-mobile">
-            <span>Data</span>
+            <a href="#"><span>Data</span></a>
           </div>
           <div class="info-mobile">
-            <span>Business</span>
+            <a href="#"><span>Business</span></a>
           </div>
           <div class="info-mobile">
-            <span>Marketing</span>
+            <a href="#"><span>Marketing</span></a>
           </div>
         </div>
       </div>
@@ -264,11 +266,11 @@
 
   <!-- FOOTER SECTION -->
 
-      <footer role="presentation">
-        <div class="copyright">
-          <span>&copy; 2016 Comlar Academy. All rights reserved</span>
+      <footer role="presentation" class="copyright-info">
+        <div>
+          <span>&copy; 2016 Comlar Academy. All rights reserved</h5>
         </div>
-        <div class="copyright-info">
+        <div>
           <span>Terms</span>
           <span>Privacy</span>
         </div>
