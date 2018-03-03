@@ -182,13 +182,16 @@ header strong {
 }
 
 .button {
-  background-color: white;  /*add transition to background-color */ /*add pseudo class to button */
+  background-color: white;
   padding: 1rem 5rem;
-  border-radius: .625rem;
+  /*border-radius: .625rem; */
 }
 
 .button:hover {
   background-color: rgb(183, 69, 0);
+  border-radius: .625rem;
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
 }
 
 .button:active {
@@ -281,7 +284,7 @@ header strong {
   display: flex;
   align-items: center;
   padding: 1rem;
-  border: 1px solid grey;  /* add transition */
+  border: 1px solid grey;
 }
 
 
@@ -326,8 +329,8 @@ header strong {
     display: block;
     text-align: center;
     padding: 2rem;
-    border-top: 1px solid grey; /* check for color then delele */
-    border-bottom: 1px solid grey; /*this too */
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
   }
 
   .career-section-mobile h1 {
@@ -335,18 +338,22 @@ header strong {
   }
 
   .info-mobile {
-    background-color: grey; /*for example color */
+    background-color: grey;
     padding: 1.5rem;
     margin-bottom: 1rem;
-    border-radius: .625rem;
   }
 
   .info-mobile:hover {
     background-color: rgb(183, 69, 0);
+    border-radius: .625rem;
+    transition-duration: .5s;
   }
 
   .info-mobile:active {
     background-color: rgb(0, 106, 107);
+
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
   }
 
 }
@@ -367,7 +374,6 @@ header strong {
   display: flex;
   flex-direction: column;
   align-items: center;
-   /* check color */
   padding: 2rem 0 2rem 1.5rem;
 }
 
@@ -422,8 +428,7 @@ header strong {
   display: flex;
   align-items: center;
   padding: 1rem;
-    /* change color to design */
-  border: 1px solid grey; /*add transition to background-color */
+  border: 1px solid grey;
 }
 
 .thesis-info .image-container {
@@ -445,7 +450,7 @@ header strong {
   footer {
     margin-bottom: 1rem;
   }
-  .copyright {
+  .copyright-info {
     font-size: .8rem;
   }
 }
