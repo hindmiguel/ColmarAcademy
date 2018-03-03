@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Colmar Academy</title>
-    <link href="./Colmar_Academy.ico" rel="icon">
+    <link href="./Colmar_Academy.ico" rel="icon" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
 
@@ -14,7 +14,7 @@
 
 <!-- HEADER SECTION -->
 
-    <header class="header-desktop">
+    <header class="header-desktop" role="presentation">
       <div class="header-content">
         <div class="logo-content">
           <img src="./resources/images/ic-logo.svg">
@@ -31,7 +31,7 @@
       </div>
     </header>
 
-    <header class="header-mobile"> <!-- this is for mobile -->
+    <header class="header-mobile" role="presentation"> <!-- this is for mobile -->
         <nav>
           <ul>
             <li><img src="./resources/images/ic-logo.svg"></li>
@@ -41,6 +41,8 @@
           </ul>
         </nav>
     </header>
+
+<!-- MAIN CONTENT -->
 
     <div class="main-container">
 
@@ -227,7 +229,7 @@
         <div class="thesis-container">
           <div class="video-content">
             <div class="video-container">
-              <video src="./resources/videos/thesis.mp4" controls>
+              <video role="application" src="./resources/videos/thesis.mp4" controls>
                 Video not supported
               </video>
             </div>
@@ -262,7 +264,7 @@
 
   <!-- FOOTER SECTION -->
 
-      <footer>
+      <footer role="presentation">
         <div class="copyright">
           <span>&copy; 2016 Comlar Academy. All rights reserved</span>
         </div>

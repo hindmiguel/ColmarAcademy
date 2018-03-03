@@ -3,6 +3,7 @@
 html {
   font-family: "Georgia", sans-serif;
   font-size: 16px;
+  background-color: rgb(0, 181, 183);
 }
 
 header {
@@ -170,6 +171,7 @@ header strong {
 .button {
   background-color: white;  /*add transition to background-color */ /*add pseudo class to button */
   padding: 1rem 5rem;
+  border-radius: .625rem;
 }
 
 /*ACADEMY INFORMATION */
@@ -315,6 +317,7 @@ header strong {
     background-color: grey; /*for example color */
     padding: 1.5rem;
     margin-bottom: 1rem;
+    border-radius: .625rem;
   }
 
 }
@@ -335,6 +338,7 @@ header strong {
   display: flex;
   flex-direction: column;
   align-items: center;
+   /* check color */
   padding: 2rem 0 2rem 1.5rem;
 }
 
@@ -389,7 +393,7 @@ header strong {
   display: flex;
   align-items: center;
   padding: 1rem;
-  background-color: blue;  /* change color to design */
+    /* change color to design */
   border: 1px solid grey; /*add transition to background-color */
 }
 
@@ -416,5 +420,5 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
-  border-top: 1px solid grey;
+  border-top: 1px solid black;
 }
